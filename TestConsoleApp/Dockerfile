@@ -48,13 +48,6 @@ RUN apt-get remove --purge -y curl build-essential checkinstall cmake
 RUN apt-get autoclean && apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# prepare dir
-RUN mkdir /source
-
-VOLUME ["/source"]
-WORKDIR /source
-CMD ["bash"]
-
 ARG source
 WORKDIR /app
 COPY ${source:-obj/Docker/publish} .
