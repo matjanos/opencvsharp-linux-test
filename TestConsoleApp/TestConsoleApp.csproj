@@ -6,23 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenCvSharp3-AnyCPU" Version="3.2.0.20170324" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
-    <None Update="dll\x64\OpenCvSharpExtern.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="dll\x86\OpenCvSharpExtern.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Update="OpenCvSharpExtern.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="dll\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp3-AnyCPU" Version="3.2.0.20170419" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

@@ -1,26 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{1B6081BC-18AC-4561-88B0-116516FB46C7}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8C101212-10A6-42F3-A4DD-661499837362}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Release-JP|Any CPU = Release-JP|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B6081BC-18AC-4561-88B0-116516FB46C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B6081BC-18AC-4561-88B0-116516FB46C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B6081BC-18AC-4561-88B0-116516FB46C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B6081BC-18AC-4561-88B0-116516FB46C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C101212-10A6-42F3-A4DD-661499837362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C101212-10A6-42F3-A4DD-661499837362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C101212-10A6-42F3-A4DD-661499837362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C101212-10A6-42F3-A4DD-661499837362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C101212-10A6-42F3-A4DD-661499837362}.Release-JP|Any CPU.ActiveCfg = Release|Any CPU
+		{8C101212-10A6-42F3-A4DD-661499837362}.Release-JP|Any CPU.Build.0 = Release|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Release-JP|Any CPU.ActiveCfg = Release|Any CPU
+		{AD75CEEF-9F83-42C6-83CE-CF103E8B8F1C}.Release-JP|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

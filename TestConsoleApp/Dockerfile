@@ -6,8 +6,8 @@ ARG OPENCV_VERSION="3.2.0"
 
 # install dependencies
 RUN apt-get update
-RUN apt-get install -y libopencv-dev yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libv4l-dev libtbb-dev libqt4-dev libgtk2.0-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils pkg-config
-RUN apt-get install -y curl build-essential checkinstall cmake unzip libunwind8 gettext wget git
+RUN apt-get install -y libopencv-dev yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libv4l-dev libtbb-dev libqt4-dev libgtk2.0-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils pkg-config libunwind8
+RUN apt-get install -y curl build-essential checkinstall cmake unzip gettext wget git
 
 # download opencv
 RUN mkdir -p /tmp/opencv
@@ -44,7 +44,7 @@ RUN make
 RUN make install
 
 # cleanup package manager
-RUN apt-get remove --purge -y curl build-essential checkinstall cmake
+RUN apt-get remove --purge -y curl build-essential checkinstall cmake unzip gettext wget git
 RUN apt-get autoclean && apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
