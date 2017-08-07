@@ -6,4 +6,4 @@ services:
     volumes:
       - .:/src
     working_dir: /src
-    command: /bin/bash -c "dotnet restore ./TestConsoleApp.sln && dotnet publish ./TestConsoleApp.sln -c Release -o ./obj/Docker/publish"
+    command: /bin/bash -c "dotnet restore ./TestConsoleApp.sln && dotnet publish ./TestConsoleApp.sln -c Release -o ./bin/Docker/publish"
