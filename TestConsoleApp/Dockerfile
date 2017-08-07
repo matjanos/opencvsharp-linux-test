@@ -39,10 +39,10 @@ RUN make install
 #RUN apt-get install dotnet-dev-1.0.4 -y
 
 #get mono
-RUN apt install --reinstall gnupg2
-RUN apt install dirmngr
+RUN apt install --reinstall gnupg2 -y
+RUN apt install dirmngr -y
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-RUN echo "deb http://download.mono-project.com/repo/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/mono-official.list
+RUN echo "deb http://download.mono-project.com/repo/ubuntu trusty main" | tee /etc/apt/sources.list.d/mono-official.list
 RUN apt-get update
 RUN apt-get install mono-devel -y
 
