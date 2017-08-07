@@ -1,5 +1,6 @@
 ﻿using OpenCvSharp;
 using System;
+
 namespace TestConsoleApp
 {
     class Program
@@ -22,6 +23,8 @@ namespace TestConsoleApp
                 Console.WriteLine("Hold on! It still crashes, but an exception is different.");
                 Console.WriteLine(e.Message);
             }
+
+            Console.ReadKey();
         }
     }
 }
